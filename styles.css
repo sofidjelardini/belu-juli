@@ -30,7 +30,7 @@
 
     @media screen and (min-width: 500px){
         background-image: url('./imgs/fondo-desktop.png');
-        background-size: contain;
+        background-size: cover;
     }
 }
 
@@ -53,13 +53,15 @@
     opacity: 0.75;
 
     @media screen and (min-width: 500px){
-        width: 5%;
-        height: 5%;
-        margin: 3% auto;
+        width: 7%;
+        height: 7%;
+        /* margin: 4% auto 3% auto; */
+        margin: 4% auto 0% auto;
     }
 }
 
 .logo-fin{
+    margin-bottom: 2%;
     @media screen and (max-width: 500px){
         display: none;
     }
@@ -96,7 +98,7 @@
 
     @media screen and (min-width: 500px){
         font-size: 2.3em;
-        margin-bottom: 3%;
+        margin: 1.5% auto;
         font-weight: 100;
     }
 }
@@ -108,7 +110,6 @@
     font-family: 'Kamerik Light';
     font-size: xx-large;
     margin: 5% 0;
-    margin-top: 8%;
     align-items: center;
     opacity: 0.75;
 
@@ -184,6 +185,7 @@
 .esperamos-desktop{
     width: 35% !important;
     font-size: x-large !important;
+    padding-bottom: 2%;
 
     @media screen and (max-width: 500px){
         display: none;
@@ -204,11 +206,11 @@
 }
 
 .luna-miel{
-    margin: 4% auto;
+    margin: 12% auto 4% auto;
 
     @media screen and (min-width: 500px){
         font-size: x-large;
-        width: 50%;
+        width: 45%;
     }
 }
 
@@ -221,7 +223,7 @@
     text-align: center;
     text-transform: none;
     letter-spacing: 0.065em;
-    margin: 7% auto;
+    margin: 5% auto;
 }
 
 .hora-lugar{
@@ -234,12 +236,11 @@
     border-right: 1px solid rgba(72, 67, 63, 0.8);
     line-height: 80%;
     font-size: large;
-    padding-right: 4%;
+    padding-right: 5%;
 
     @media screen and (min-width: 500px){
-        font-size: 1.3em !important;
+        font-size: 2em !important;
         width: auto;
-        padding-right: 2%;
     }
 }
 
@@ -252,12 +253,12 @@
     text-transform: none;
     letter-spacing: 0.065em;
     width: 100% !important;
-    margin-left: 4%;
+    margin-left: 5%;
     font-size: small;
 
     @media screen and (min-width: 500px){
         font-size: large !important;
-        margin-left: 3%;
+        width: auto !important;
     }
 }
 
@@ -265,15 +266,13 @@
     display: flex;
     flex-direction: row;
     width: 65%;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
+    justify-content: center;
     margin: auto;
     align-items: center;
 
 
     @media screen and (min-width: 500px){
         width: 100%;
-        /* margin-bottom: 2%; */
     }
 }
 
@@ -291,6 +290,7 @@
     @media screen and (min-width: 500px){
         font-size: large;
         margin-bottom: 0;
+        margin-right: 23%;
         padding: auto;
     }
 }
@@ -305,7 +305,7 @@
 }
 
 .agenda{
-    font-size: medium;
+    font-size: x-large;
     @media screen and (max-width: 500px){
         display: none;
     }
@@ -323,21 +323,28 @@
 
 .container{
     @media screen and (min-width: 500px){
-        width: 23%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 2%;
+        min-height: inherit;
+    }
+}
+
+.festejo{
+    @media screen and (min-width: 500px){
+        width: 22%;
+        padding-top: 0.5%;
     }
 }
 
 .lugares{
-    width: 100vw;
-    @media screen and (min-width: 500px){
+    /* @media screen and (min-width: 500px){
         background: rgba(255,255,255, 0.4);
         display: flex;
         flex-direction: column;
-    }
+    } */
 }
 
 .containers {
