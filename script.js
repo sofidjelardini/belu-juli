@@ -47,7 +47,12 @@ function altura() {
     document.body.scrollHeight
   );
 
-  lugares.textContent = `altura: ${pageHeight}`;
+  const viewportHeight = Math.max(
+    document.documentElement.clientHeight || 0,
+    window.innerHeight || 0
+  );
+
+  lugares.textContent = `altura total: ${pageHeight} - altura: primera pantalla ${viewportHeight}`;
 }
 
 altura();
