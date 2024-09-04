@@ -222,23 +222,31 @@
 
 .esperamos-desktop{
     width: 35%;
-    font-size: x-large !important;
+    font-size: x-large;
     padding-bottom: 2%;
+    color: #48433f;
+    direction: ltr;
+    font-family: 'Kamerik Light';
+    line-height: 1.3639266em;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.065em;
+    margin: auto;
 
     @media screen and (min-width: 400px) and (max-width: 500px){
         margin-top: 0 !important;
-        width: 55% !important;
-        font-size: large !important;
+        width: 60% !important;
+        font-size: large;
         padding-bottom: 0%;
     }
     @media screen and (max-width: 400px){
-        font-size: medium !important;
+        font-size: medium;
         width: 50%;
         margin-bottom: 20% !important;
     }
 }
 
-.esperamos, .luna-miel, .esperamos-desktop{
+.esperamos, .luna-miel{
     color: #48433f;
     direction: ltr;
     font-family: 'Kamerik Light';
