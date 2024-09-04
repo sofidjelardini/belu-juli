@@ -207,16 +207,6 @@
     }
 }
 
-.esperamos{
-    width: 55% !important;
-    margin: 5% auto !important;
-    
-
-    @media screen and (min-width: 500px){
-        display: none;
-    }
-}
-
 .esperamos-desktop{
     width: 35%;
     font-size: x-large;
@@ -243,7 +233,7 @@
     }
 }
 
-.esperamos, .luna-miel{
+.luna-miel{
     color: #48433f;
     direction: ltr;
     font-family: 'Kamerik Light';
@@ -253,19 +243,12 @@
     letter-spacing: 0.065em;
     font-size: small;
     margin: auto;
-
-    @media screen and (max-width: 500px){
-        width: 60%;
-    }
-}
-
-.luna-miel{
     width: 70%;
 
-    @media screen and (max-width: 500px){
+    @media screen and (min-width: 390px) and (max-width: 500px){
+        font-size: medium;
         margin: 12% auto 5% auto;
     }
-
     @media screen and (min-width: 500px){
         font-size: x-large;
         margin: 12% auto 4% auto;
@@ -283,6 +266,9 @@
     text-transform: none;
     letter-spacing: 0.065em;
     margin: 5% auto;
+    @media screen and (min-width: 390px) and (max-width: 500px) {
+        font-size: large;
+    }
     @media screen and (max-width: 500px){
         margin: 6% auto;
     }
@@ -317,6 +303,9 @@
     margin-left: 5%;
     font-size: small;
 
+    @media screen and (min-width: 390px) and (max-width: 500px) {
+        font-size: medium;
+    }
     @media screen and (min-width: 500px){
         font-size: large !important;
         width: auto !important;
@@ -336,7 +325,7 @@
     }
 }
 
-.ubicacion, .lista, .agenda{
+.lista{
     color: #48433f;
     letter-spacing: -0.011em;    
     font-size: small;
@@ -346,13 +335,32 @@
     font-family: "Inria Serif Italic";
     text-decoration: underline;
     text-decoration-color: #8a8784;
+
+    @media screen and (max-width: 500px){
+        margin-bottom: 8%;
+    }
+    @media screen and (min-width: 500px){
+        font-size: x-large;
+    }
 }
 
 .ubicacion {
     font-size: 70%;
+    color: #48433f;
+    letter-spacing: -0.011em;    
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+    font-family: "Inria Serif Italic";
+    text-decoration: underline;
+    text-decoration-color: #8a8784;
 
+    @media screen and (min-width: 390px) and (max-width: 500px) {
+        margin: 3% 0 0 3% !important;
+        font-size: 80%;
+    }
     @media screen and (max-width: 500px){
-        margin: 3% 0 0 8% !important;
+        margin: 3% 0 0 8%;
     }
 
     @media screen and (min-width: 500px){
@@ -363,19 +371,18 @@
     }
 }
 
-.lista{
-    @media screen and (max-width: 500px){
-        margin-bottom: 8%;
-    }
-    @media screen and (min-width: 500px){
-        font-size: x-large;
-    }
-}
-
 .agenda{
+    color: #48433f;
+    letter-spacing: -0.011em;    
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+    font-family: "Inria Serif Italic";
+    text-decoration: underline;
+    text-decoration-color: #8a8784;
     font-size: x-large;
     @media screen and (max-width: 500px){
-    font-size: 75%;
+        font-size: 80%;
         background: rgba(255,255,255, 0.4);
         padding: 10% 0 6% 0;
         margin: 0;
