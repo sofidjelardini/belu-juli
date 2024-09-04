@@ -38,21 +38,3 @@ function updateTimer() {
 }
 
 updateTimer();
-
-function altura() {
-  const lugares = document.getElementById('lugares');
-
-  const pageHeight = Math.max(
-    document.documentElement.scrollHeight,
-    document.body.scrollHeight
-  );
-
-  const viewportHeight = Math.max(
-    document.documentElement.clientHeight || 0,
-    window.innerHeight || 0
-  );
-
-  lugares.textContent = `altura total: ${pageHeight} - altura: primera pantalla ${viewportHeight}`;
-}
-
-altura();

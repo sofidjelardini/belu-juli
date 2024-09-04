@@ -24,12 +24,12 @@
 }
 
 .fondo{
-    background-image: url('./imgs/bj-mobile.png');
+    background-image: url('./imgs/mobile-v73.png');
     background-size: contain;
     margin: auto;
 
     @media screen and (min-width: 500px){
-        background-image: url('./imgs/fondo-desktop.png');
+        background-image: url('./imgs/desktop-v73.png');
         /* background-size: cover; */
     }
 }
