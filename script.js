@@ -38,3 +38,16 @@ function updateTimer() {
 }
 
 updateTimer();
+
+function altura() {
+  const lugares = document.getElementById('lugares');
+
+  const pageHeight = Math.max(
+    document.documentElement.scrollHeight,
+    document.body.scrollHeight
+  );
+
+  lugares.textContent = `altura: ${pageHeight}`;
+}
+
+altura();
