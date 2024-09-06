@@ -28,7 +28,7 @@ function updateTimer() {
 
   // Actualizamos los elementos HTML con los valores de días, horas y minutos
   daysElement.textContent = dias;
-  hoursElement.textContent = horas;
+  hoursElement.textContent = horas.toString().padStart(2, '0');
   minutesElement.textContent = minutos;
 
   // Si la fecha objetivo aún no ha pasado, llamamos a la función nuevamente después de 1 segundo
