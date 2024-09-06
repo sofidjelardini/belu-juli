@@ -24,10 +24,10 @@
 }
 
 .fondo{
-    background-image: url("imgs/bj-mobile.png");
+    background-image: url("imgs/mobile-v2.svg");
     background-size: contain;
     margin: auto;
-    @media screen and (min-width: 500px){background-image: url('./imgs/desktop-v73.png');}
+    @media screen and (min-width: 500px){background-image: url('./imgs/desktop.svg');}
 }
 
 .inicio {
@@ -360,10 +360,12 @@
     text-decoration: underline;
     text-decoration-color: #8a8784;
     font-size: x-large;
+    padding-bottom:6%;
+
     @media screen and (max-width: 500px){
         font-size: 80%;
-        background: rgba(255,255,255, 0.4);
-        padding: 10% 0 6% 0;
+        /* background: rgba(255,255,255, 0.4); */
+        /* padding: 10% 0 6% 0; */
         margin: 0;
     }
 }
@@ -407,13 +409,20 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 7% 0 4% 0;
+    padding: 6% 0 4% 0;
     margin: auto;
     width: 100%;
-    @media screen and (max-width:500px) {
+    /* @media screen and (max-width:500px) {
         background: rgba(255,255,255, 0.4);
-    }
+    } */
     @media screen and (min-width: 500px){
         font-size: x-large;
+    }
+}
+
+.lugares{
+    background: rgba(255,255,255, 0.4);
+    @media screen and (max-width:500px) {
+        margin-bottom: 5%;
     }
 }
